@@ -132,24 +132,32 @@ h2 {
   background: var(--primary-hover);
 }
 
-.feedback {
-  margin: 12px 0 0;
-  font-weight: 700;
-  color: var(--muted);
+.success-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, #f1fff6 0%, #dbeafe 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  animation: fadeIn 0.6s ease;
 }
 
-.success-box {
-  border: 1px dashed var(--ok);
-  border-radius: 16px;
-  padding: 18px;
-  background: #f1fff6;
-}
-
-.success-box p {
+.success-hint {
   margin: 0;
-  font-size: 18px;
-  color: var(--ok);
-  font-weight: 700;
+  font-size: clamp(28px, 6vw, 64px);
+  font-weight: 900;
+  color: #176d3f;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 12px rgba(23, 109, 63, 0.15);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 @media (max-width: 680px) {
