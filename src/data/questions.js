@@ -373,7 +373,7 @@ export const QUESTIONS_BY_STATION = {
         'Фредді Меркьюрі не знає',
         'Джеффері Епштейн Олександрович не знає',
       ],
-      correctIndex: 1,
+      correctIndex: 0,
     },
     {
       id: '5-5',
